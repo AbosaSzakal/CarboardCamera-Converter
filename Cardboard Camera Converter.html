@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html class="mdl-js wkmcmeooi idc0_331"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Cardboard Camera Converter</title>
+
+  <link rel="stylesheet" href="./Cardboard Camera Converter_files/material.min.css">
+  <script async="" src="./Cardboard Camera Converter_files/analytics.js.download"></script><script src="./Cardboard Camera Converter_files/material.min.js.download"></script>
+  <link rel="stylesheet" href="./Cardboard Camera Converter_files/icon">
+
+  <script src="./Cardboard Camera Converter_files/dialog-polyfill.js.download"></script>
+  <link rel="stylesheet" href="./Cardboard Camera Converter_files/dialog-polyfill.css">
+
+  <link rel="stylesheet" href="./Cardboard Camera Converter_files/style.css">
+</head>
+<body class="vsc-initialized">
+  <div id="dropzone">
+
+    <div class="drop-message">
+      <img src="./Cardboard Camera Converter_files/logo_google_cardboard_camera_24dp.svg">
+      <h1>Drop a Cardboard Camera image anywhere to convert</h1>
+      <h2 id="openfile">or click here to open a file</h2>
+    </div>
+
+    <!-- The in progress dialog -->
+    <dialog id="progress" class="mdl-dialog">
+    <h3 id="title" class="mdl-dialog__title">Converting...</h3>
+    <div class="mdl-dialog__content">
+      <div class="mdl-progress mdl-js-progress mdl-progress__indeterminate is-upgraded" data-upgraded=",MaterialProgress"><div class="progressbar bar bar1" style="width: 0%;"></div><div class="bufferbar bar bar2" style="width: 100%;"></div><div class="auxbar bar bar3" style="width: 0%;"></div></div>
+    </div>
+    </dialog>
+
+    <dialog id="fail" class="mdl-dialog">
+    <h3 id="title" class="mdl-dialog__title">Conversion failed</h3>
+    <div class="mdl-dialog__content">
+      <div id="error" class="error"></div>
+    </div>
+    </dialog>
+
+    <dialog id="success" class="mdl-dialog">
+    <h3 id="title" class="mdl-dialog__title">Conversion succeeded</h3>
+    <div class="mdl-dialog__content">
+      <div class="success">Successfully extracted over-under format from Cardboard
+        Camera image!</div>
+    </div>
+    <div id="buttons" class="mdl-dialog__actions">
+      <button id="dl-image" type="button" class="mdl-button mdl-js-button
+        mdl-button--raised mdl-js-ripple-effect" disabled="" data-upgraded=",MaterialButton,MaterialRipple">Download Stereo JPEG<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+      <button id="dl-audio" type="button" class="mdl-button mdl-js-button
+        mdl-button--raised mdl-js-ripple-effect" disabled="" data-upgraded=",MaterialButton,MaterialRipple">Download MP4 Audio<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+    </div>
+    </dialog>
+
+
+  <input type="file" multiple="true" style="display: none;"></div>
+  <script src="./Cardboard Camera Converter_files/all.js.download"></script>
+
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-35315454-9', 'auto');
+ga('send', 'pageview');
+  </script>
+
+
+</body></html>
