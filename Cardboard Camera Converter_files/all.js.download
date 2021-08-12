@@ -1729,7 +1729,9 @@ module.exports = Emitter;
 var OdsConverter = require('./ods-converter');
 var Dropzone = require('./dropzone');
 
-var TARGET_SIZE = 9138;
+
+//var Target_Resolution = parseInt(document.getElementById("Target_Res").valueAsNumber);
+//var TARGET_SIZE = Target_Resolution;
 
 var dz = document.querySelector('#dropzone');
 var dropzone = new Dropzone(dz);
@@ -1866,9 +1868,9 @@ var XMP_SIGNATURE = 'http://ns.adobe.com/xap/1.0/';
 var EXTENSTION_SIGNATURE = 'http://ns.adobe.com/xmp/extension/';
 var EXT_PREFIX_LENGTH = 71;
 
-
-var TARGET_SIZE = 9138;
-
+//var Target_Resolution = parseInt(document.getElementById("Target_Res").valueAsNumber);
+//var TARGET_SIZE = Target_Resolution;
+var TARGET_SIZE;
 function OdsConverter() {
   this.lastWidth = null;
 }
@@ -1938,7 +1940,7 @@ OdsConverter.prototype.buildImage_ = function(leftImage, rightImage, gPano, audi
   var cropTop = parseInt(gPano['CroppedAreaTopPixels']);
   var cropWidth = parseInt(gPano['CroppedAreaImageWidthPixels']);
   var initialHeadingDeg = parseInt(gPano['InitialViewHeadingDegrees']);
-
+  TARGET_SIZE = fullWidth;
   var ratio = TARGET_SIZE / fullWidth;
 
   // Handle partial panos.

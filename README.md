@@ -4,7 +4,7 @@ A slightly modified version of the official Cardboard Camera converter by Google
 The original can be found here: http://storage.googleapis.com/cardboard-camera-converter/index.html
 
 The original limited the output size to 4096x4096 thus heavily reducing the original resolution of the photos.
-This version outputs 9138x9138 images, at the cost of increased processing time.
+This version outputs images at their original size, at the cost of increased processing time.
 
 To run it, simply download the repo, open the html and use it as you would the original site.
 
