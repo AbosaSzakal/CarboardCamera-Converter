@@ -3,6 +3,8 @@
 A slightly modified version of the official Cardboard Camera converter by Google.
 The original can be found here: http://storage.googleapis.com/cardboard-camera-converter/index.html
 
+## Click [here](https://github.com/AbosaSzakal/CarboardCamera-Converter/blob/main/View%20on%20Quest%202.md) for a tutorial on how to view on Quest 2.
+
 The original limited the output size to 4096x4096 thus heavily reducing the original resolution of the photos.
 This version outputs images at their original size, at the cost of increased processing time.
 
